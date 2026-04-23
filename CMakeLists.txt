@@ -640,3 +640,13 @@ endif()
 # =============================================================================
 # end ULTRA INFINITY
 # =============================================================================
+
+# --- ultra env probe : structured build environment snapshot ---
+include(cmake/ultra_env_probe.cmake)
+ultra_env_probe_write("${CMAKE_BINARY_DIR}/ultra_env.json")
+
+add_custom_target(ultra-env
+  COMMAND ${CMAKE_COMMAND} -E cat "${CMAKE_BINARY_DIR}/ultra_env.json"
+  COMMENT "dumping ultra env probe"
+  VERBATIM
+)
