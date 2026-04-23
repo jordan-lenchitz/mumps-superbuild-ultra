@@ -8,6 +8,6 @@ these two MUMPSes (1966 and 1996) have nothing to do with each other, enjoy
 
 what does each MUMPS stand for?
 
-MUMPS (**1966**) stands for "Massachusetts General Hospital Utility Multi-Programming System" and some people call it "M"
+MUMPS (**1966**) stands for "Massachusetts General Hospital Utility Multi-Programming System"
 
 MUMPS (**1996**) stands for "Multifrontal Massively Parallel Solver"
