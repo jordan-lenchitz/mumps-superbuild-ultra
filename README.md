@@ -16,4 +16,4 @@ will anything here ever be upstreamed?
 
 what does `ULTRA_MODE` do?
 - prints a banner at configure time reminding you which MUMPS you're building
-- nothing to affect the actual `cmake` build in any way whatsoever
+- nothing to affect the actual `cmake` build in any way whatsoever...unless
