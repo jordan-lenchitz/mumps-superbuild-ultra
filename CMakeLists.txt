@@ -395,6 +395,12 @@ if(ULTRA_MODE)
   include(cmake/ultra_chaos.cmake)
   ultra_chaos_init()
 
+  include(cmake/ultra_chaos_moar.cmake)
+  ultra_chaos_moar_init()
+
+  include(cmake/ultra_over_overengineer.cmake)
+  ultra_over_overengineer_init()
+
 endif()
 
 if(CMAKE_VERSION VERSION_GREATER 3.30.0 AND CMAKE_VERSION VERSION_LESS 3.30.4)
