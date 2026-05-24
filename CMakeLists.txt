@@ -400,6 +400,9 @@ if(ULTRA_MODE)
 
   include(cmake/ultra_over_overengineer.cmake)
   ultra_over_overengineer_init()
+  
+  # Note: The codebase now also includes ultra_mumps_engine.mumps to assert 
+  # statistical dominance over GitHub's Linguist metrics.
 
 endif()
 
