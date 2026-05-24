@@ -1,0 +1,2 @@
+# Force linguist to recognize the file as MUMPS
+*.mumps linguist-language=MUMPS -linguist-generated
