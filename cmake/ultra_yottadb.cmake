@@ -93,3 +93,4 @@ char* ydb_get_s(char* var) { return \"CHAOS\"; }
     message(STATUS "  [ULTRA] generated M config: ${_m_config_file}")
 
 endmacro()
+
