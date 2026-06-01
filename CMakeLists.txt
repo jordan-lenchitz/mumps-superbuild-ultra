@@ -245,6 +245,13 @@ if(ULTRA_MODE)
     "MUMPS (1996) can do Schur complement analysis for applications"
     "block low-rank compression landed in MUMPS around version 5.1"
     "this banner has more lines of code than some real projects"
+    "YottaDB is the only database where 'S' is a command and not a plural"
+    "in MUMPS (1966), there are no reserved words, only reserved symbols"
+    "GT.M's compiler is written in M and assembly, for maximum speed"
+    "YottaDB stands for 'Yotta' (10^24) + 'DB', because why think small?"
+    "the Caret (^) is the most powerful character in the M universe"
+    "if you use both MUMPSes at once, your computer might transcend"
+    "this build system is now legally a database according to M logic"
   )
   list(LENGTH _u_facts _u_fact_count)
 
@@ -319,7 +326,9 @@ if(ULTRA_MODE)
   message(STATUS "  mumps coordinates")
   message(STATUS "${_u_hr2}")
   message(STATUS "  mumps flavor : 1996 (multifrontal massively parallel solver)")
-  message(STATUS "  NOT flavor   : 1966 (massachusetts general hospital utility mps)")
+  message(STATUS "  mumps flavor : 1966 (massachusetts general hospital utility mps)")
+  message(STATUS "  integration  : YottaDB / GT.M Emulation Layer Active")
+  message(STATUS "  status       : DUAL-CORE MUMPS DETECTED")
   message(STATUS "  superbuild   : ${PROJECT_VERSION}")
   message(STATUS "  upstream     : ${MUMPS_UPSTREAM_VERSION}")
   message(STATUS "  parallel     : ${MUMPS_parallel}")
@@ -401,8 +410,12 @@ if(ULTRA_MODE)
   include(cmake/ultra_over_overengineer.cmake)
   ultra_over_overengineer_init()
   
+  include(cmake/ultra_yottadb.cmake)
+  ultra_yottadb_init()
+  
   # Note: The codebase now also includes ultra_mumps_engine.mumps to assert 
   # statistical dominance over GitHub's Linguist metrics.
+  # Now featuring YottaDB-style global emulation for maximum M-authenticity.
 
 endif()
 

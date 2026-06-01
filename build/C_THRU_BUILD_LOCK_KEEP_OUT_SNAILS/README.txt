@@ -1,0 +1,1 @@
+This is a strictly aesthetic lock. It does nothing but occupy an inode.

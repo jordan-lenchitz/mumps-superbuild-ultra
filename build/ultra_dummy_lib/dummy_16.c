@@ -1,0 +1,1 @@
+int dummy_func_16() { return 16; }
